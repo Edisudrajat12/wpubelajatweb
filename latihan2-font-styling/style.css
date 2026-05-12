@@ -1,3 +1,8 @@
+body {
+  background-color: black;
+}
+
+
 h1 {
   font-size: 48px;
   text-transform: uppercase;
@@ -5,18 +10,18 @@ h1 {
   letter-spacing: 10px;
   text-decoration: underline;
   text-decoration-style: wavy;
-  text-decoration-color: rgb(111, 122, 126);
-  text-shadow : 5px 5px 0 ;rgb(215, 215, 215);
+  text-decoration-color: #435272;
+  text-shadow : 5px 5px 0px rgb(215 215 215 /10%);
   text-decoration-skip-ink:none;
   font-family: 'Fugaz One', cursive;
-  color: rgb(36, 43, 45);
+  color: #38BAF4;
   text-align: center;
   }
 
 .quote {
   font-size: 30px;
   font-family: 'Poppins', sans-serif;
-  color: navy;
+  color: #f8f8ff;
   text-align: center;
   line-height: 2.2;
   word-spacing: 5px;
@@ -24,13 +29,15 @@ h1 {
 
 .credit {
   font-size: 50px;
+  color: rgb(166 162 162/ 70%);
   letter-spacing: 2px;
   font-family: "Caveat", cursive;
   text-align: center;
-  
+
 }
 
 span {
   font-weight: bold;
   font-style: italic;
+  color: crimson;
 }
