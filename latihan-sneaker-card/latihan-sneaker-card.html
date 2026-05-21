@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sneakers Card</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+  }
+
+  .product-card {
+    background-color: white;
+    width: 330px;
+    margin: auto;
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 10px 20px rgb (0 0 0 / 0.5);
+  }
+
+  .product-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .product-category {
+    font-size: 12px;
+    color: #06c;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    }
+
+    .product-title {
+      font-size: 22px;
+      font-weight: bold;
+      color: #1a1a1a;
+      margin-bottom: 12px;
+    }
+
+    .product-description {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      text-align: justify;
+    }
+
+    .price-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .price-section .price {
+      font-size: 26px;
+      color: black;
+      font-weight: bold;
+    }
+
+    .price-section.original-price {
+      font-size: 15px;
+      color: #999;
+      margin-left: 8px;
+    }
+
+    .size-options-wrapper {
+      border: none;
+      margin-bottom: 20px;
+    }
+
+    .size-label-text {
+      font-size: 14px;
+      color: #1a1a1a;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .size-options {
+      margin-bottom: 25px;
+    }
+
+    .size-options input[type="radio"] {
+      display: none;
+    }
+
+    .size-options label {
+      display: inline-block;
+      width: 44px;
+      height: 44px;
+      border: 2px solid #eee;
+      text-align: center;
+      line-height: 44px;
+      margin-right: 8px;
+      font-weight: bold;
+      color:#666;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: 0.3s ease;
+    }
+
+    .size-options input[type="radio"]:checked+label {
+      background-color: black;
+      border-color: black;
+      color: white;
+    }
+
+    .buy-button {
+      width: 100%;
+      padding: 16px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .buy-button:hover {
+      background-color: #333;
+    }
+</style>
+
+
+</head>
+<body>
+  <article class="product-card">
+    <figure class="product-image">
+      <img src="result_luis-felipe-lins-J2-wAQDckus-unsplash.jpg" alt="Sneakers Nike Orange">
+    </figure>
+
+    <p class="product-category">Nike Sportswear</p>
+    <h3 class="product-title">Luis Felipe Lins</h3>
+
+    <p class="product-description">Sepatu Luis Felipe Lins adalah sepatu yang dirancang dengan inspirasi dari kota New York pada tahun 1930-an. Sepatu ini memiliki desain yang elegan dan klasik dengan detail yang menarik, seperti kancing yang dibuat dari kulit sapi dan sol yang tebal. Sepatu ini dirancang dengan kualitas tinggi dan menggunakan bahan yang nyaman dan tahan lama. Sepatu Luis Felipe Lins cocok untuk digunakan dalam berbagai kegiatan, mulai dari acara formal hingga gaya kasual. Sepatu ini juga memiliki berbagai pilihan warna dan ukuran untuk memenuhi kebutuhan dan preferensi pengguna.</p>
+
+    <div class="price-section">
+      <span class="price">IDR 1.999.999</span>
+      <del class="original-price">IDR 2.299.000</del>
+    </div>
+<form action="">
+    <fieldset class="size-options-wrapper">
+      <legend class="size-label-text">Pilihan Ukuran (US):</legend>
+      <div class="size-options">
+        <input type="radio" name="size" id="s8" velue="8">
+        <label for="s8">8</label>
+
+        <input type="radio" name="size" id="s9" velue="9">
+        <label for="s9">9</label>
+
+        <input type="radio" name="size" id="s10" velue="10">
+        <label for="s10">10</label>
+
+        <input type="radio" name="size" id="s11" velue="11">
+        <label for="s11">11</label>
+
+        <input type="radio" name="size" id="s12" velue="12">
+        <label for="s12">12</label>
+      </div>
+    </fieldset>
+    <button class="buy-button" type="submit"> Tambahkan Ke Keranjang</button>
+    </form>
+  </article>
+</body>
+</html>
