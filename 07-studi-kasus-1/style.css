@@ -1,0 +1,216 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0f172a;
+      color: #ffffff;
+      display: grid;
+      font-family: "inter";
+      line-height: 1.6;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    h1, h2, h3, h4, {
+      color: #fff;
+      font-family: "poppins";
+    }
+
+    section {
+      padding: 60px 0;
+      border-bottom: 1px solid #1e293b;
+    }
+    section h3 {
+      color: #06b6d4;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: #1e293b 2px solid;
+      background-color: rgb(15 23 42 / 0.9);
+      color: #06b6d4;
+      padding: 1em 2em;
+    }
+
+    header h1 {
+      font-size: 1.5em;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul a {
+      text-decoration: none;
+      color: #f1f5f9;
+      font-weight: 500; /*tebal huruf*/
+      transition: color 0.3s ease;
+    }
+
+    nav ul a:hover {
+      color: #06b6d4;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    #hero {
+      text-align: center;
+      background-image: linear-gradient(to bottom, #1e293b, #0f172a)
+      padding: 100px 20px;
+    }
+
+    #hero h2 {
+      font-size: 3.5em;
+      margin-bottom: 16px;
+    }
+
+    #hero p {
+      font-size: 1.2rem;
+      margin: 0 auto 2rem auto;
+      max-width: 600px;
+      color: #cbd5e1;
+    }
+
+    #hero a {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: #06b6d4;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+      font-size: 1.5rem;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3);
+    }
+
+    #hero a:hover {
+      background-color: #0e7490;
+      box-shadow: 0 6px 20px rgba(6, 182, 212, 0.5);
+    }
+
+    #about p {
+      margin-bottom: 1rem;
+      text-indent: 2em; /*indentasi paragraf menjorok kedalam awal paragrap*/
+      text-align: center;
+    }
+
+    #lineup ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    #lineup ul li {
+      background-color: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+    }
+
+    #lineup ul li:hover {
+      outline: 2px solid #06b6d4;
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px -1px rgba(0, 0, 0, 0.3);
+    }
+
+    #lineup .artist-card {
+      position: relative;
+    }
+
+    #lineup .day-badge {
+      position: absolute;
+      top: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #06b6d4;
+      color: #fff;
+      padding: 3px 8px;
+      font-size: 0.75rem;
+      font-weight: bold;
+      border-radius: 20px;
+    }
+
+    #lineup .day-badge-isyana {
+    position: absolute;
+       top: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #06b6d4;
+      color: #fff;
+      padding: 3px 8px;
+      font-size: 0.75rem;
+      font-weight: bold;
+      border-radius: 20px;*membuat gambar menjadi lingkaran sempurna*/
+
+    }
+
+    #lineup img {
+      border-radius: 50%;
+     margin-bottom: 15px;
+     height: 150px;
+     width: 150px;
+      object-fit: cover;
+     transition: transform 0.3s ease;
+     border: 3px solid #06b6d4;
+    } 
+
+    #schedule table {
+      width: 100%;
+      margin-top: 20px;
+      background-color: #1e293b;
+      border-radius: 8px;
+      overflow: hidden;
+      border-collapse: collapse;
+    }
+
+    #schedule th, #schedule td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #334155;
+    }
+
+    #schedule th{
+      background-color: #06b6d4;
+      color: #0f172a;
+      font-size: 1.25rem;
+    }
+/*tabel belang zebra striping/garis ganti warna*/
+    #schedule tbody tr:nth-child(even) {
+      background-color: #334155;
+    }
+
+    #schedule tbody tr:hover {
+      background-color: #475569;
+    }
+
+
+   
+
+    
