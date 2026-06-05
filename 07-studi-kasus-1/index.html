@@ -36,7 +36,7 @@
         <h2>Neon Night Music Festival</h2>
         <h4>3 Days. 6 Artist Infinite Vibes.</h4>
         <p>June 15-17 2026 | Jakarta International Expo</p>
-        <a href="tickets">Get Tikets</a>
+        <a href="#tickets" class="floating-ticket-btn">Get Tikets</a>
       </section>
       
       <!--About Section-->
@@ -82,7 +82,7 @@
           <li>
             <figure class="artist-card">
               <span class="day-badge"> Day 1</span>
-              <img src="assets/images/jrocks 1.jpg" alt="J-Rocks" width="200" />
+              <img src="assets/images/jrocks 2.jpg" alt="J-Rocks" width="200" />
               <figcaption>
                 <h4>J-Rocks</h4>
                 <p>Genre: Alternative Rock/Pop Rock/J-Pop/Hard Rock</p>
@@ -108,7 +108,7 @@
           <li>
             <figure class="artist-card">
               <span class="day-badge-isyana"> Day 2</span>
-              <img src="assets/images/isyana 1.jpg" alt="Isyana" width="200" />
+              <img src="assets/images/isyana 2.jpg" alt="Isyana" width="200" />
               <figcaption>
                 <h4>Isyana Sarasvati</h4>
                 <p>Genre: Rock Progresive/Hard Rock/Metal</p>
@@ -134,7 +134,7 @@
           <li>
            <figure class="artist-card">
               <span class="day-badge"> Day 3</span>
-              <img src="assets/images/lets 1.jpg" alt="Let`s" width="200" />
+              <img src="assets/images/Lets n.png" alt="Let`s" width="200" />
               <figcaption>
                 <h4>Let`s</h4>
                 <p>Genre: Alternative Rock/Pop Rock/J-Pop</p>
@@ -145,7 +145,7 @@
           <li>
             <figure class="artist-card">
               <span class="day-badge"> Day 3</span>
-              <img src="assets/images/Laruku 1.jpg" alt="Laruku" width="200" />
+              <img src="assets/images/laruku 2.jpg" alt="Laruku" width="200" />
               <figcaption>
                 <h4>L`Arc-en-Ciel</h4>
                 <p>Genre: Alternative Rock/Pop Rock/J-Rock</p>
@@ -249,60 +249,37 @@
       <section id="tickets">
         <h3>Get Your Tickets</h3>
         <form>
+          <div>
           <label for="fullname">Full Name:</label>
           <input
             type="text"
             id="fullname"
-            name="fullname"
-            required
-            autofocus
-            autocomplete="off"
+            name="fullname"required autocomplete="off"></div>
           
-
+          <div>
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required /><br />
+          <input type="email" id="email" name="email" required></div>
 
-          <label for="phone">Phone Number:</label> <br />
-          <input type="tel" id="phone" name="phone" required /><br />
+         
+          <div>
+            <label for="ticket_category">Ticket Category (3 Day Pass)</label>
+            <select name="ticket_category" id="ticket_category">
+              <option value="" disebled selected>Select ticket category...</option>
+              <option value="reguler">Reguler (2.500.000)</option>
+              <option value="vip">VIP (4.500.000)</option>
+              <option value="vvip">VVIP (5.500.000)</option>
+            </select>
+          </div>
 
-          <label>Ticket Type:</label><br>
-          <input type="radio" id="reguler" name="tiket type" />
-          <label for="reguler">Reguler (1.500.000)</label><br />
-
-          <input type="radio" id="vip" name="tiket type" />
-          <label for="vip">VIP (2.500.000)</label><br />
-
-          <input type="radio" id="vvip" name="tiket type" />
-          <label for="vvip">VVIP (4.500.000)</label><br>
-
-          <br>
-          <label for="quantity">Quantity:</label>
+         <div>
+          <label for="quantity">Quantity(1-10)</label>
           <input
             type="number"
             id="quantity"
             name="quantity"
             min="1"
             max="10"
-            velue="1"
-          /><br>
-
-          <br>
-          <label>Day Pass:</label>
-          <input type="checkbox" id="day1" name="day1">
-          <label for="day1">Day 1 (June 15) - J-Rocks & Garasi Band</label>
-          <br>
-
-          <br>
-          <label>Day Pass:</label>
-          <input type="checkbox" id="day2" name="day2">
-          <label for="day2">Day 2 (June 16) - Isyana Sarasvati & Jafunisun</label>
-          <br>
-
-          <br>
-          <label>Day Pass:</label>
-          <input type="checkbox" id="day3" name="day3">
-          <label for="day3">Day 3 (June 17) - Let's & L'Arc-en-Ciel</label>
-          <br>
+            velue="1"required></div>            
 
           <button type="submit">Book Now</button>
 
@@ -366,6 +343,9 @@
 </p>
 <p>Contact: <a href="mailto:hello@wpustreamfast.com">hello@wpustreamfast.com.</a></p>
     </footer>
+
+    <!--floating ticket button-->
+    <a href="#tickets" class="floating-tickets-btn">Buy Tickets</a>
     
   </body>
 </html>

@@ -29,13 +29,13 @@
 
     <main>
       <!--Hero Section-->
-      <section id="home">
-        <h2>Neom Night Music Festival</h2>
+      <section id="hero">
+        <h2>Neon Night Music Festival</h2>
         <h4>3 Days. 6 Artist Infinite Vibes.</h4>
         <p>June 15-17 2026 | Jakarta International Expo</p>
         <a href="tickets">Get Tikets</a>
       </section>
-      <hr/>
+      
       <!--About Section-->
       <section id="about">
         <h3>About The Festival</h3>
@@ -126,7 +126,7 @@
           </li>
           <li>
             <figure>
-              <img src="assets/images/lets 1.jpg" alt="Let`s" width="200" />
+              <img src="assets/images/Lets n.png" alt="Let`s" width="200" />
               <figcaption>
                 <h4>Let`s</h4>
                 <p>Genre: Alternative Rock/Pop Rock/J-Pop</p>
@@ -241,33 +241,30 @@
       <section id="tickets">
         <h3>Get Your Tickets</h3>
         <form>
-          <label for="fullname">Full Name:</label> <br />
-          <input
-            type="text"
+          <div>
+          <label for="fullname">Full Name:</label>
+            <input type="text"
             id="fullname"
             name="fullname"
             required
             autofocus
-            autocomplete="off"
-          /><br />
+            autocomplete="off"></div>
 
-          <label for="email">Email:</label> <br />
-          <input type="email" id="email" name="email" required /><br />
+          <div>
+          <label for="email">Email:</label> 
+          <input type="email" id="email" name="email" required></div>
 
-          <label for="phone">Phone Number:</label> <br />
-          <input type="tel" id="phone" name="phone" required /><br />
+         <div>
+          <label for="ticket_category">Ticket Category (3 Day Pass)</label>
+          <select name="ticket_category" id="ticket_category">
+            <option value=""disabled selected>Select ticket category</option>
+            <option value="regular">Regular (Rp 2.000.000)</option>
+            <option value="vip">VIP (Rp 3.500.000)</option>
+            <option value="vvip">VVIP (Rp 5.000.000)</option>
+          </select>
+         </div>
 
-          <label>Ticket Type:</label><br>
-          <input type="radio" id="reguler" name="tiket type" />
-          <label for="reguler">Reguler (1.500.000)</label><br />
-
-          <input type="radio" id="vip" name="tiket type" />
-          <label for="vip">VIP (2.500.000)</label><br />
-
-          <input type="radio" id="vvip" name="tiket type" />
-          <label for="vvip">VVIP (4.500.000)</label><br>
-
-          <br>
+          
           <label for="quantity">Quantity:</label>
           <input
             type="number"
@@ -276,25 +273,25 @@
             min="1"
             max="10"
             velue="1"
-          /><br>
+          />
 
-          <br>
+          
           <label>Day Pass:</label>
           <input type="checkbox" id="day1" name="day1">
           <label for="day1">Day 1 (June 15) - J-Rocks & Garasi Band</label>
-          <br>
+          
 
-          <br>
+          
           <label>Day Pass:</label>
           <input type="checkbox" id="day2" name="day2">
           <label for="day2">Day 2 (June 16) - Isyana Sarasvati & Jafunisun</label>
-          <br>
+          
 
-          <br>
+          
           <label>Day Pass:</label>
           <input type="checkbox" id="day3" name="day3">
           <label for="day3">Day 3 (June 17) - Let's & L'Arc-en-Ciel</label>
-          <br>
+          
 
           <button type="submit">Book Now</button>
 
